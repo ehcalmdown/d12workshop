@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEESE</title>
+</head>
+<body>
+  <h1>CHEESE</h1>
+
+<h2>IT IS NOW  <span data-th-text="${currTime}"></span></h2>
+
+<div data-th-if="${currHour le 11}">
+    <img src="https://c.tenor.com/O5as23V0QaMAAAAC/baby-sun-teletubbies.gif" height="300px" width="400px">
+</div>
+<div data-th-unless="${currHour le 11}">
+    <img src="https://c.tenor.com/HLajIP0vc_cAAAAC/james-may-cheese.gif" height="300px" width="410px">
+</div>
+</body>
+</html>

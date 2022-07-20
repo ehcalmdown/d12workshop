@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEETS</title>
+</head>
+<body>
+<h1>HI</h1>
+    <table>
+        <tr data-th-each="i: ${numbers}">
+            <td>
+                    <img th:src="@{${'/images/' + i + '.jpg'}}" width="200px" height="200px" />
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
